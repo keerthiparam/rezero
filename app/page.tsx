@@ -1,9 +1,32 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Shield, CheckCircle, FileText, Smartphone, HardDrive, Lock, Download, Eye } from "lucide-react"
 
 export default function HomePage() {
+  const handleDownload = async () => {
+    try {
+      const url = "https://raw.githubusercontent.com/Joshni86/re-zero/refs/heads/main/reZero.sh"
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+
+      const blob = await response.blob()
+      const link = document.createElement("a")
+      link.href = URL.createObjectURL(blob)
+      link.download = "reZero.sh"
+      document.body.appendChild(link)
+      link.click()
+      link.remove()
+      URL.revokeObjectURL(link.href)
+    } catch (error) {
+      console.error("Download failed:", error)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -42,7 +65,7 @@ export default function HomePage() {
             certificates with RSA signatures for compliance and audit trails.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8">
+            <Button size="lg" className="text-lg px-8" onClick={handleDownload}>
               <Download className="mr-2 h-5 w-5" />
               Download CLI Tool
             </Button>
