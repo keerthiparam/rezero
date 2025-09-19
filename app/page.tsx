@@ -71,16 +71,16 @@ export default function HomePage() {
               <Download className="mr-2 h-5 w-5" />
               Download CLI Tool
             </Button>
-            <Button>
+            <Button variant="outline" size="lg" asChild>
               <a
-                  href="https://youtu.be/qy-Bq6xD_wk?si=AVYbMMSgHa_w7yqQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-2xl border px-8 py-3 text-lg font-medium transition-colors 
-                            hover:bg-accent hover:text-accent-foreground border-input bg-transparent"
-                >
-              <Eye className="mr-2 h-5 w-5" />
-              View Demo
+                href="https://youtu.be/qy-Bq6xD_wk?si=AVYbMMSgHa_w7yqQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg"
+              >
+                <Eye className="mr-2 h-5 w-5" />
+                View Demo
+              </a>
             </Button>
           </div>
         </div>
@@ -288,9 +288,11 @@ export default function HomePage() {
               <Download className="mr-2 h-5 w-5" />
               Download Now
             </Button>
-            <a href="https://github.com/keerthiparam/rezero" target="_blank" rel="noopener noreferrer">
-              View Documentation
-            </a>
+            <Button variant="outline" size="lg" asChild>
+              <a href="https://github.com/keerthiparam/rezero" target="_blank" rel="noopener noreferrer">
+                View Documentation
+              </a>
+            </Button>
           </div>
         </div>
       </section>
