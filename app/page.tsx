@@ -64,7 +64,7 @@ export default function HomePage() {
           </h1>
           <p className="text-xl text-muted-foreground text-pretty mb-8 max-w-2xl mx-auto">
             Professional-grade data sanitization for HDDs, SSDs, NVMe drives, and mobile devices. Generate tamper-proof
-            certificates with RSA signatures for compliance and audit trails. 100% Open Source
+            certificates with RSA signatures for compliance and audit trails. 100% Open Source.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8" onClick={handleDownload}>
