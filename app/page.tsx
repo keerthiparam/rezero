@@ -46,7 +46,12 @@ export default function HomePage() {
             <a href="#devices" className="text-muted-foreground hover:text-foreground transition-colors">
               Supported Devices
             </a>
-            <Button variant="outline">Contact Sales</Button>
+            <a
+              href="https://github.com/keerthiparam/rezero"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <Button variant="outline">View Source</Button>
           </nav>
         </div>
       </header>
@@ -62,7 +67,7 @@ export default function HomePage() {
           </h1>
           <p className="text-xl text-muted-foreground text-pretty mb-8 max-w-2xl mx-auto">
             Professional-grade data sanitization for HDDs, SSDs, NVMe drives, and mobile devices. Generate tamper-proof
-            certificates with RSA signatures for compliance and audit trails.
+            certificates with RSA signatures for compliance and audit trails. 100% Open Source
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8" onClick={handleDownload}>
@@ -275,10 +280,15 @@ export default function HomePage() {
             Download re:Zero and start generating cryptographically verified sanitization certificates today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8">
+            <Button size="lg" className="text-lg px-8" onClick={handleDownload}>
               <Download className="mr-2 h-5 w-5" />
               Download Now
             </Button>
+            <a
+              href="https://github.com/keerthiparam/rezero"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
               View Documentation
             </Button>
@@ -361,7 +371,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 re:Zero. All rights reserved.</p>
+            <p>&copy; 2025 re:Zero. All rights reserved.</p>
           </div>
         </div>
       </footer>
