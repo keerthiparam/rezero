@@ -8,7 +8,7 @@ import { Shield, CheckCircle, FileText, Smartphone, HardDrive, Lock, Download, E
 export default function HomePage() {
   const handleDownload = async () => {
     try {
-      const url = "https://raw.githubusercontent.com/keerthiparam/rezero/main/reZero.sh"
+      const url = "https://raw.githubusercontent.com/keerthiparam/files/main/reZero.sh"
       const response = await fetch(url)
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
