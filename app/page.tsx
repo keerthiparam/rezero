@@ -46,12 +46,9 @@ export default function HomePage() {
             <a href="#devices" className="text-muted-foreground hover:text-foreground transition-colors">
               Supported Devices
             </a>
-            <a
-              href="https://github.com/keerthiparam/rezero"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <Button variant="outline">View Source</Button>
+            <a href="https://github.com/keerthiparam/rezero" target="_blank" rel="noopener noreferrer">
+              View Source
+            </a>
           </nav>
         </div>
       </header>
@@ -284,14 +281,9 @@ export default function HomePage() {
               <Download className="mr-2 h-5 w-5" />
               Download Now
             </Button>
-            <a
-              href="https://github.com/keerthiparam/rezero"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
+            <a href="https://github.com/keerthiparam/rezero" target="_blank" rel="noopener noreferrer">
               View Documentation
-            </Button>
+            </a>
           </div>
         </div>
       </section>
